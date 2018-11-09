@@ -1,0 +1,145 @@
+<!--pages/mine/mine.wxml-->
+<view class='mine-head'>
+  <image src='http://imgqn.koudaitong.com/upload_files/2013/10/28/138296629227681033.jpg'/>
+  <view class='mine-head-box'>
+    <view class='mine-head-header'>
+      <image src='../../assets/img/touxiang.png'/>
+    </view>
+    <text>lpf的小程序</text>
+  </view>
+</view>
+
+
+<view class='mine-nav'>
+  <view>
+    <view class='mine-nav-num'>0.00</view>
+    <view class='mine-nav-text'>余额</view>
+  </view>
+  <view>
+    <view class='mine-nav-num'>0</view>
+    <view class='mine-nav-text'>积分</view>
+  </view>
+  <view>
+    <view class='mine-nav-num'>0</view>
+    <view class='mine-nav-text'>卡</view>
+  </view>
+  <view>
+    <view class='mine-nav-num'>0</view>
+    <view class='mine-nav-text'>卷</view>
+  </view>
+</view>
+
+
+<view class='mine-content'>
+  <view class='mine-content-top'>
+    <text class='mine-content-top-one'>我的订单</text>
+    <view class='mine-content-top-two'>
+      <text>查看全部订单</text>
+      <image src='../../assets/img/dayu.png'></image>
+    </view>
+  </view>
+  <view class='mine-content-bottom'>
+    <view>
+      <view class='mine-content-bottom-box'><image src='../../assets/img/nospend.png'></image></view>
+      <view><text>待付款</text></view>
+    </view>
+    <view>
+      <view class='mine-content-bottom-box'><image src='../../assets/img/nojiedan.png'></image></view>
+      <view><text>待接单</text></view>
+    </view>
+    <view>
+      <view class='mine-content-bottom-box'><image src='../../assets/img/noshop.png'></image></view>
+      <view><text>待发货</text></view>
+    </view>
+    <view>
+      <view class='mine-content-bottom-box'><image src='../../assets/img/shop.png'></image></view>
+      <view><text>已发货</text></view>
+    </view>
+    <view>
+      <view class='mine-content-bottom-box'><image src='../../assets/img/ok.png'></image></view>
+      <view><text>已完成</text></view>
+    </view>
+  </view>
+</view>
+
+
+<view class='mine-foot'>
+  <view class='mine-foot-box'>
+    <view class='mine-foot-box-padd'>
+      <view class='mine-foot-box-padd-one'>
+        <image src='../../assets/img/youhuijuan.png'></image>
+      </view>
+      <view class='mine-foot-box-padd-two'><text>优惠码</text></view>
+      <view class='mine-foot-box-padd-three'>
+        <image src='../../assets/img/dayu.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='mine-foot-box'>
+    <view class='mine-foot-box-padd'>
+      <view class='mine-foot-box-padd-one'>
+        <image src='../../assets/img/gouwuche.png'></image>
+      </view>
+      <view class='mine-foot-box-padd-two'><text>购物车</text></view>
+      <view class='mine-foot-box-padd-three'>
+        <image src='../../assets/img/dayu.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='mine-foot-box'>
+    <view class='mine-foot-box-padd'>
+      <view class='mine-foot-box-padd-one'>
+        <image src='../../assets/img/fanxian.png'></image>
+      </view>
+      <view class='mine-foot-box-padd-two'><text>返现</text></view>
+      <view class='mine-foot-box-padd-three'>
+        <image src='../../assets/img/dayu.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='mine-foot-box'>
+    <view class='mine-foot-box-padd'>
+      <view class='mine-foot-box-padd-one'>
+        <image src='../../assets/img/liwu.png'></image>
+      </view>
+      <view class='mine-foot-box-padd-two'><text>收到的礼物</text></view>
+      <view class='mine-foot-box-padd-three'>
+        <image src='../../assets/img/dayu.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='mine-foot-box'>
+    <view class='mine-foot-box-padd'>
+      <view class='mine-foot-box-padd-one'>
+        <image src='../../assets/img/koudai.png'></image>
+      </view>
+      <view class='mine-foot-box-padd-two'><text>赠品</text></view>
+      <view class='mine-foot-box-padd-three'>
+        <image src='../../assets/img/dayu.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='mine-foot-box'>
+    <view class='mine-foot-box-padd'>
+      <view class='mine-foot-box-padd-one'>
+        <image src='../../assets/img/book.png'></image>
+      </view>
+      <view class='mine-foot-box-padd-two'><text>知识付费课程</text></view>
+      <view class='mine-foot-box-padd-three'>
+        <image src='../../assets/img/dayu.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='mine-foot-padding'></view>
+  <view class='mine-foot-box'>
+    <view class='mine-foot-box-padd'>
+      <view class='mine-foot-box-padd-one'>
+        <image src='../../assets/img/zhanghao.png'></image>
+      </view>
+      <view class='mine-foot-box-padd-two'><text>账号设置</text></view>
+      <view class='mine-foot-box-padd-three'>
+        <image src='../../assets/img/dayu.png'></image>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,210 @@
+/* pages/home/home.wxss */
+page{
+  height: 100%;
+}
+.film-list{
+  height: 100%;
+}
+.ht-swiper{
+  width: 750rpx;
+  height: 375rpx;
+}
+swiper{
+  height: 375rpx;
+}
+swiper-item{
+  position: relative;
+  width: 100%;
+  height: 0;
+}
+.slide-image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.ht-nav{
+  width: 750rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ht-nav>view{
+  width: 187rpx;
+  height: 188rpx;
+  position: relative;
+}
+.ht-nav>view>image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; 
+}
+
+.ht-list{
+  height: 386rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+  padding: 20rpx;
+  background: #fff;
+  white-space: nowrap;
+}
+.ht-list-x{
+  width: auto;
+  overflow: hidden;
+}
+.ht-list-x-box{
+  width: 210rpx;
+  height: 367rpx;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 10rpx 6rpx;
+}
+.ht-list-x-box-image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.ht-list-x-box-image view{
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+}
+.ht-list-x-box-image image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.ht-list-x-box-text{
+  width: 200rpx;
+  height: 148rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.ht-list-x-box-text text:nth-child(1){
+  white-space: normal;
+  display: block;
+  width: 160rpx;
+  height: 64rpx;
+  font-size: 24rpx;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: #333;
+}
+.ht-list-x-box-text text:nth-child(2){
+  color: #ff4444;
+  height: 28rpx;
+  line-height: 2rpx;
+  font-size: 24rpx;
+}
+.ht-list-x-box-text-icon{
+  width: 40rpx;
+  height: 40rpx;
+  position: relative;
+  float: right;
+}
+.ht-list-x-box-text-icon image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 10rpx;
+  right: 0;
+  overflow: hidden;
+}
+
+.list-wrapper{
+  width: 750rpx;
+  height: 200rpx;
+}
+.list-wrapper view{
+  height: 200rpx;
+  position: relative;
+}
+.list-wrapper view image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+
+
+.home-list{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20rpx;
+  background: #fff;
+}
+.home-list-x-box{
+  width: 222rpx;
+  height: 370rpx;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 10rpx 6rpx;
+}
+.home-list-x-box-image{
+  width: 222rpx;
+  height: 222rpx;
+}
+.home-list-x-box-image view{
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+}
+.home-list-x-box-image image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.home-list-x-box-text{
+  width: 222rpx;
+  height: 148rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.home-list-x-box-text text:nth-child(1){
+  white-space: normal;
+  display: block;
+  width: 182rpx;
+  height: 64rpx;
+  font-size: 24rpx;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: #333;
+}
+.home-list-x-box-text text:nth-child(2){
+  color: #ff4444;
+  height: 28rpx;
+  line-height: 2rpx;
+  font-size: 24rpx;
+}
+.home-list-x-box-text-icon{
+  width: 40rpx;
+  height: 40rpx;
+  position: relative;
+  float: right;
+}
+.home-list-x-box-text-icon image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 10rpx;
+  right: 0;
+  overflow: hidden;
+}

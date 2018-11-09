@@ -1,0 +1,69 @@
+<!--pages/cart/cart.wxml-->
+<view>
+  <!-- <view class='cart-empty'>
+    <image src='https://wap.fruitday.com/content/images/main/cart_empty-172251d77c.png'></image>
+    <view class='txt'>还没找到心仪的商品吗?</view>
+    <view class='go-home'>去逛逛吧</view>
+  </view> -->
+  <view class='cart-container'>
+    <view class='title'>
+      <view class='title-name'>商品清单</view>
+      <view class='all-weight'>总重约0kg</view>
+    </view>
+    <view class='cart-list' wx:for="{{allDe}}" wx:key="{{item.id}}">
+      <view class='cart-list-item'>
+        <view class='select'>
+          <checkbox-group bindchange="checkboxChange">
+            <checkbox value='{{item.money}}' checked='{{item.checkbox}}'></checkbox>
+          </checkbox-group>
+        </view>
+        <view class='pro-desc'>
+          <view class='pro-img'>
+            <image src='{{item.url}}'></image>
+          </view>
+          <view class='pro-info'>
+            <view class='pro-name'>{{item.text}}</view>
+            <view class='pro-weight'>
+              <text class='white-space'>2kg/单斤9.98元</text>kg
+            </view>
+            <view class='pro-price'>
+              <text class='small'>￥</text>
+              <text class='big'>{{item.money}}</text>
+              <text class='small'>.9</text>
+              <text class='pro-time'>明日达</text>
+            </view>
+          </view>
+        </view>
+        <view class='count'>
+          <view class='reduce-area' bindtap='reduceShopping' data-obj="{{item}}">
+            <view class='reduce'>-</view>
+          </view>
+          <view class='num'>{{item.count}}</view>
+          <view class='add-area' bindtap='addShopping' data-obj="{{item}}">
+            <view class='add'>+</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='footer-box'>
+    <view class='footer'>
+      <view class='all-select'>
+        <checkbox></checkbox>
+        <text class='all-select-txt'>全选</text>
+      </view>
+      <view class='footer-info'>
+        <view class='total'>
+          <text class='total-txt'>合计：</text>
+          <text class='small'>￥</text>
+          <text class='big'>{{allMoney}}</text>
+          <text class='small'>.0</text>
+        </view>
+        <view class='empty hide'>
+          <text>清空购物车</text>
+        </view>
+      </view>
+      <view class='account dis'>结算（0）</view>
+    </view>
+  </view>
+</view>

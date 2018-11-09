@@ -1,0 +1,235 @@
+/* pages/detail/detail.wxss */
+view{
+  box-sizing: border-box;
+}
+page{
+  height: 100%;
+  background-color: #f8f8f8;
+}
+.detail{
+  flex: 1;
+  margin-bottom: 100rpx;
+}
+.film-list{
+  height: 100%;
+}
+.ht-swiper{
+  width: 750rpx;
+  height: 750rpx;
+}
+swiper{
+  height: 750rpx;
+}
+swiper-item{
+  position: relative;
+  width: 100%;
+  height: 0;
+}
+.slide-image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.detail-content{
+  width: 750rpx;
+  height: 248rpx;
+  background-color: #fff;
+}
+.detail-content-top{
+  width: 100%;
+  height: 108rpx;
+  padding: 20rpx 20rpx 0;
+  font-size: 32rpx;
+  color: #333;
+}
+.detail-content-mid{
+  padding: 20rpx;
+  height: 76rpx;
+  width: 100%;
+  font-size: 28rpx;
+  color: #ff4444;
+}
+.detail-content-bot{
+  width: 100%;
+  height: 64rpx;
+  padding: 0 20rpx;
+  font-size: 24rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #999;
+}
+.detail-trans{
+  width: 750rpx;
+  height: 20rpx;
+}
+.detail-sale{
+  width: 750rpx;
+  height: 229rpx;
+  background: #fff;
+}
+.detail-sale-t{
+  width: 100%;
+  height: 114rpx;
+  line-height: 66rpx;
+  padding: 22rpx 20rpx;
+  font-size: 28rpx;
+  border-bottom: 2rpx solid #dedede;
+}
+.detail-sale-t view text:nth-child(1){
+  float: left;
+  color: #808080;
+}
+.detail-sale-t view text:nth-child(2){
+  width: 120rpx;
+  height: 54rpx;
+  display: block;
+  float: left;
+  border: 2rpx solid #11b57c;
+  color: #11b57c;
+  border-radius: 9%;
+  margin-top: 4rpx;
+  margin-left: 18rpx;
+  line-height: 52rpx;
+  text-align: center;
+}
+.detail-sale-b{
+  width: 100%;
+  height: 115rpx;
+  padding: 22rpx 20rpx;
+  font-size: 28rpx;
+  line-height: 66rpx;
+}
+.detail-sale-b-one{
+  float: left;
+  color: #808080;
+}
+.detail-sale-b-two{
+  float: left;
+  margin-left: 18rpx;
+  border: 2rpx solid #eee;
+}
+.detail-sale-b-two text{
+  display: block;
+  float: left;
+}
+.detail-sale-b-two text:nth-child(1){
+  text-align: center;
+  width: 46rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  color: #c4c4c4;
+}
+.detail-sale-b-two text:nth-child(2){
+  text-align: center;
+  width: 64rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  border-left: 2rpx solid #f2f2f2;
+  border-right: 2rpx solid #f2f2f2;
+}
+.detail-sale-b-two text:nth-child(3){
+  text-align: center;
+  width: 46rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  color: #c4c4c4;
+}
+.detail-foot{
+  width: 750rpx;
+  height: 68rpx;
+  background: #fff;
+  padding: 18rpx 20rpx;
+  font-size: 26rpx;
+  color: #808080;
+}
+.detail-footer{
+  width: 750rpx;
+  height: 200rpx;
+  text-align: center;
+  line-height: 200rpx;
+  font-size: 32rpx;
+  color: #808080;
+}
+.detail-btn{
+  width: 750rpx;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  border: 2rpx solid #eee;
+  padding-left: 20rpx;
+}
+.detail-btn-o{
+  width: 112rpx;
+  height: 100rpx;
+  font-size: 24rpx;
+  color: #b6b5b5;
+  text-align: center;
+  float: left;
+}
+.detail-btn-t{
+  width: 112rpx;
+  height: 100rpx;
+  font-size: 24rpx;
+  text-align: center;
+  color: #b6b5b5;
+  float: left;
+}
+.detail-btn-th{
+  width: 223rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 30rpx;
+  background-color: #ff6353;
+  color: white;
+  float: right;
+}
+.detail-btn-o view{
+  width: 40rpx;
+  height: 40rpx;
+  position: relative;
+  margin-left: 37rpx;
+  margin-top: 14rpx;
+}
+.detail-btn-o view image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.detail-btn-t view:nth-child(1){
+  width: 40rpx;
+  height: 40rpx;
+  position: relative;
+  margin-left: 32rpx;
+  margin-top: 14rpx;
+}
+.detail-btn-t view image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.detail-btn-t view:nth-child(3){
+  width: 40rpx;
+  display: block;
+  height: 40rpx;
+  line-height: 38rpx;
+  left: 188rpx;
+  top: 0;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #f00;
+  position: absolute;
+}

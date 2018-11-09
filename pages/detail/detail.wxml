@@ -1,0 +1,66 @@
+<!--pages/detail/detail.wxml-->
+<view class='detail'>
+  <view class='ht-swiper'>
+    <swiper 
+      indicator-dots="{{indicatorDots}}"
+      interval="{{interval}}" 
+      autoplay="{{autoplay}}" 
+      duration="{{duration}}"
+      circular="true"
+    >
+      <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view wx:key="{{detailContent.id}}">
+    <view class='detail-content'>
+      <view class='detail-content-top'>
+        <text>{{detailContent.text}}</text>
+      </view>
+      <view class='detail-content-mid'>
+        <text>￥{{detailContent.money}}</text>
+      </view>
+      <view class='detail-content-bot'>
+        <text>运费：免运费</text>
+        <text>剩余：26342</text>
+        <text>销量:3.3万</text>
+      </view>
+    </view>
+    <view class='detail-trans'></view>
+    <view class='detail-sale'>
+      <view class='detail-sale-t'>
+        <view><text>规格</text><text>20个/份</text></view>
+      </view>
+      <view class='detail-sale-b'>
+        <view>
+          <text class='detail-sale-b-one'>数量</text>
+          <view class='detail-sale-b-two'>
+            <text bindtap='reduceDetail'>-</text><text>{{detailContent.count}}</text><text bindtap='addDetail'>+</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='detail-trans'></view>
+    <view class='detail-foot'>
+      <text>暂无评价</text>
+    </view>
+    <view class='detail-footer'>
+      <view><text>没有更多信息了</text></view>
+    </view>
+  </view>
+</view>
+<view class='detail-btn'>
+  <view class='detail-btn-o' bindtap='toHome'>
+    <view><image src='../../assets/img/home.png'></image></view>
+    <text>首页</text>
+  </view>
+  <view class='detail-btn-t' bindtap='toCart'>
+    <view><image src='../../assets/img/cart.png'></image></view>
+    <text>购物车</text>
+    <view>{{count}}</view>
+  </view>
+  <view class='detail-btn-th' bindtap='addDetailCart' data-all="{{detailContent}}">加入购物车</view>
+</view>

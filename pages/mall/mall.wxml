@@ -1,0 +1,25 @@
+<!--pages/mall/mall.wxml-->
+<view class='mall'>
+  <view class='position-left'>
+    <view class='mall-left'>
+      <view class="{{name === item.id ?'is_checked':'mall-left-list'}}" bindtap="serviceSelection" wx:for="{{list}}" wx:key="{{item.id}}" data-id="{{item.id}}">
+        <text>{{item.text}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='mall-right'>
+    <view class='mall-right-top'><text>{{showText}}</text></view>
+    <view class='mall-right-bot' wx:for="{{listRight}}" wx:key="{{item.id}}">
+      <view class='mall-right-bot-box'>
+        <view class='mall-right-image'>
+          <image src='{{item.url}}' bindtap='toDetail' data-id="{{item.id}}"></image>
+        </view>
+        <text bindtap='toDetail' data-id="{{item.id}}">{{item.text}}</text>
+        <text>¥{{item.money}}</text>
+        <view class='ht-list-x-box-text-icon' catchtap='addToCart' data-obj="{{item}}">
+          <image src='../../assets/img/add.png'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

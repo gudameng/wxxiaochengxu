@@ -1,0 +1,159 @@
+<!--pages/home/home.wxml-->
+<scroll-view
+  scroll-y
+  bindscrolltolower="loadMore"
+  class='film-list'
+>
+  <view class='ht-swiper'>
+    <swiper 
+      indicator-dots="{{indicatorDots}}"
+      interval="{{interval}}" 
+      autoplay="{{autoplay}}" 
+      duration="{{duration}}"
+      circular="true"
+    >
+      <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class='ht-nav'>
+    <view>
+      <image src='https://img.yzcdn.cn/upload_files/2018/09/29/FthN6U6ORM-UNW0GvXQA1Isq0pCa.jpg?imageView2/2/w/730/h/0/q/75/format/webp'/>
+    </view>
+    <view>
+      <image src='https://img.yzcdn.cn/upload_files/2018/09/29/FmPyPtpMpT4hOEhbRiG4yJ2fIjRa.png?imageView2/2/w/730/h/0/q/75/format/webp'/>
+    </view>
+    <view>
+      <image src='https://img.yzcdn.cn/upload_files/2018/09/29/Fn8XEMhCGql8yb1b0556Cv19xLGD.jpg?imageView2/2/w/730/h/0/q/75/format/webp'/>
+    </view>
+    <view>
+      <image src='https://img.yzcdn.cn/upload_files/2018/09/29/Fn2hWzlNzwFy9h_-UHrtLCMDI6c4.png?imageView2/2/w/730/h/0/q/75/format/webp'/>
+    </view>
+    <view>
+      <image src='https://img.yzcdn.cn/upload_files/2018/09/29/FmVdGTxqQSo_Mv4mAs5JNF65EFaY.png?imageView2/2/w/730/h/0/q/75/format/webp'/>
+    </view>
+    <view>
+      <image src='https://img.yzcdn.cn/upload_files/2018/09/29/Fu__5cVB6RJR-i-puX3KJEP-y2hI.jpg?imageView2/2/w/730/h/0/q/75/format/webp'/>
+    </view>
+    <view>
+      <image src='https://img.yzcdn.cn/upload_files/2018/09/29/FruemwjW6OnkWukphsrNz2qTM2cq.jpg?imageView2/2/w/730/h/0/q/75/format/webp'/>
+    </view>
+    <view>
+      <image src='https://img.yzcdn.cn/upload_files/2018/09/29/Fk-SKA0-lxfuL_yyL8UsHVtk3Snr.png?imageView2/2/w/730/h/0/q/75/format/webp'/>
+    </view>
+  </view>
+
+  <view class='ht-list'>
+    <scroll-view scroll-x class='ht-list-x'>
+        <view class='ht-list-x-box'>
+          <view class='ht-list-x-box-image'>
+            <view><image src='https://img.yzcdn.cn/upload_files/2018/10/18/FgUY9cinlUGJQsOgbSeF9iQmCVIY.jpg?imageView2/2/w/520/h/0/q/75/format/webp'></image></view>
+          </view>
+          <view class='ht-list-x-box-text'>
+            <text>爱媛38# 天府四川果冻橙 身材圆润 肤色深橙 果肉入口化渣 甜度高达14度以上 特优果5斤12个装</text>
+            <text>￥59.90</text>
+            <view class='ht-list-x-box-text-icon'>
+              <image src='../../assets/img/add.png'></image>
+            </view>
+          </view>
+        </view>
+        <view class='ht-list-x-box'>
+          <view class='ht-list-x-box-image'>
+            <view><image src='https://img.yzcdn.cn/upload_files/2018/10/31/FliGojw5FYO-mD3jpcRuGUFRogAs.jpg?imageView2/2/w/520/h/0/q/75/format/webp'></image></view>
+          </view>
+          <view class='ht-list-x-box-text'>
+            <text>大凉山-小周家高原苹果（脆甜，1-3天内发出）</text>
+            <text>￥48.00</text>
+            <view class='ht-list-x-box-text-icon'>
+              <image src='../../assets/img/add.png'></image>
+            </view>
+          </view>
+        </view>
+        <view class='ht-list-x-box'>
+          <view class='ht-list-x-box-image'>
+            <view><image src='https://img.yzcdn.cn/upload_files/2018/10/25/Ft6N_gN76HuZAUxxa19qPfcD1nsq.jpg?imageView2/2/w/520/h/0/q/75/format/webp'></image></view>
+          </view>
+          <view class='ht-list-x-box-text'>
+            <text>【现摘现发】四川蒲江黄心猕猴桃5斤包邮精品中果（单果70-90g） 新鲜爽口 清甜爆汁</text>
+            <text>￥29.90</text>
+            <view class='ht-list-x-box-text-icon'>
+              <image src='../../assets/img/add.png'></image>
+            </view>
+          </view>
+        </view>
+        <view class='ht-list-x-box'>
+          <view class='ht-list-x-box-image'>
+            <view><image src='https://img.yzcdn.cn/upload_files/2018/10/11/FopWmiJuXOKpV-qgwqcIZUwTpL7o.jpg?imageView2/2/w/520/h/0/q/75/format/webp'></image></view>
+          </view>
+          <view class='ht-list-x-box-text'>
+            <text>金秋红蜜桃 甜度高达18度 230天成长期 秋冬晚熟 12个装</text>
+            <text>￥88.00</text>
+            <view class='ht-list-x-box-text-icon'>
+              <image src='../../assets/img/add.png'></image>
+            </view>
+          </view>
+        </view>
+        <view class='ht-list-x-box'>
+          <view class='ht-list-x-box-image'>
+            <view><image src='https://img.yzcdn.cn/upload_files/2018/10/25/FlR03uZsGPUXIlRi0tUUeAw_Y5Ty.jpg?imageView2/2/w/520/h/0/q/75/format/webp'></image></view>
+          </view>
+          <view class='ht-list-x-box-text'>
+            <text>可以喝的爆汁橙 九月红宝宝橙 皮薄多汁 细腻化渣 酸甜爽口 自家果园橙子现摘现发 不打蜡4斤装包邮</text>
+            <text>￥39.90</text>
+            <view class='ht-list-x-box-text-icon'>
+              <image src='../../assets/img/add.png'></image>
+            </view>
+          </view>
+        </view>
+        <view class='ht-list-x-box'>
+          <view class='ht-list-x-box-image'>
+            <view><image src='https://img.yzcdn.cn/upload_files/2018/08/29/FpERFKjXX4EqTgogmIMMDt8zbjq7.jpg?imageView2/2/w/520/h/0/q/75/format/webp'></image></view>
+          </view>
+          <view class='ht-list-x-box-text'>
+            <text>【中国猕猴桃之乡】大雨影响72小时内发货  好吃到爆的周至猕猴桃 助农装净重5斤 礼盒装徐香标准24枚 品质保证 汁液多，肉质细致果香味，酸甜可口</text>
+            <text>￥29.90</text>
+            <view class='ht-list-x-box-text-icon'>
+              <image src='../../assets/img/add.png'></image>
+            </view>
+          </view>
+        </view>
+        <view class='ht-list-x-box'>
+          <view class='ht-list-x-box-image'>
+            <view><image src='https://img.yzcdn.cn/upload_files/2018/09/19/FoaapXqgqCGf_jUY5ieQPuIMw7fC.jpg?imageView2/2/w/520/h/0/q/75/format/webp'></image></view>
+          </view>
+          <view class='ht-list-x-box-text'>
+            <text>「甜蜜脆爽」出口日本的甜柿子 柿子香味 苹果口感  入口脆甜可口 咔嚓脆！</text>
+            <text>￥29.50</text>
+            <view class='ht-list-x-box-text-icon'>
+              <image src='../../assets/img/add.png'></image>
+            </view>
+          </view>
+        </view>
+    </scroll-view>
+  </view>
+
+  <view class='list-wrapper'>
+    <view>
+      <image src='https://img.yzcdn.cn/upload_files/2018/02/24/FjuVxU7yCUkaGBGwenPv-zTcHsm1.jpg?imageView2/2/w/730/h/0/q/75/format/webp'></image>
+    </view>
+  </view>
+
+  <view class='home-list'>
+    <view class='home-list-x-box' bindtap='toDetail' data-id='{{item.id}}' wx:for="{{list}}" wx:key="{{item.id}}">
+      <view class='home-list-x-box-image'>
+        <view><image src='{{item.url}}'></image></view>
+        </view>
+        <view class='home-list-x-box-text'>
+          <text>{{item.text}}</text>
+          <text>￥{{item.money}}</text>
+          <view class='home-list-x-box-text-icon'>
+            <image src='../../assets/img/add.png'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

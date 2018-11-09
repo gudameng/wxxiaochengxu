@@ -1,0 +1,180 @@
+/* pages/mine/mine.wxss */
+page{
+  background: #f9f9f9;
+}
+.mine-head{
+  width: 750rpx;
+  height: 344rpx;
+  position: relative;
+}
+.mine-head>image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.mine-head-box{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 30rpx;
+}
+.mine-head-header{
+  width: 120rpx;
+  height: 120rpx;
+  border: 2rpx solid #fff;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  background-size: 120rpx 120rpx;
+  box-shadow: 0 4rpx 8rpx rgba(0, 0, 0, .1)
+}
+.mine-head-header>image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.mine-head-box>text{
+  position: absolute;
+  color: #000;
+  left: 190rpx
+}
+
+
+.mine-nav{
+  width: 750rpx;
+  height: 220rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+}
+.mine-nav-num{
+  font-size: 28rpx;
+  color: #f83c2d;
+}
+.mine-nav-text{
+  margin-top: 8rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+
+
+.mine-content{
+  width: 750rpx;
+  height: 280rpx;
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+.mine-content-top{
+  width: 720rpx;
+  height: 46rpx;
+  padding-top: 26rpx;
+  padding-bottom: 26rpx;
+  margin-left: 30rpx;
+  border-bottom: 2rpx solid #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mine-content-top-one{
+  font-size: 28rpx;
+  color: #111;
+}
+.mine-content-top-two{
+  position: relative;
+}
+.mine-content-top-two>text{
+  font-size: 24rpx;
+  color: #999;
+  line-height: 58rpx;
+  padding-right: 64rpx;
+}
+.mine-content-top-two>image{
+  position: absolute;
+  width: 30rpx;
+  height: 46rpx;
+  top: 8rpx;
+  right: 30rpx;
+}
+.mine-content-bottom{
+  height: 180rpx;
+  box-sizing: border-box;
+  padding: 40rpx 0;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.mine-content-bottom-box{
+  width: 48rpx;
+  height: 48rpx;
+  padding-left: 14rpx
+}
+.mine-content-bottom-box image{
+  width: 48rpx;
+  height: 48rpx;
+}
+.mine-content-bottom text{
+  font-size: 24rpx;
+  color: #111;
+}
+
+.mine-foot{
+  width: 750rpx;
+  height: 636rpx;
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+.mine-foot-box{
+  width: 720rpx;
+  height: 88rpx;
+  margin-left: 30rpx;
+  box-sizing: border-box;
+  border-bottom: 2rpx solid #f2f2f2;
+}
+.mine-foot-box-padd{
+  width: 720rpx;
+  height: 88rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  padding-right: 30rpx;
+  line-height: 48rpx;
+  box-sizing: border-box;
+}
+.mine-foot-box-padd-one{
+  float: left;
+}
+.mine-foot-box-padd-one image{
+  width: 32rpx;
+  height: 32rpx;
+}
+.mine-foot-box-padd-two{
+  float: left;
+  font-size: 28rpx;
+  margin-left: 24rpx;
+  color: #111;
+}
+.mine-foot-box-padd-three{
+  float: right;
+  width: 30rpx;
+  height: 46rpx;
+}
+.mine-foot-box-padd-three image{
+  width: 30rpx;
+  height: 46rpx;
+}
+.mine-foot-box:nth-child(6){
+  border-bottom: none;
+}
+.mine-foot-padding{
+  width: 750rpx;
+  height: 20rpx;
+  margin-left: 0;
+  background-color: #f9f9f9;
+}
